@@ -6,7 +6,7 @@ import (
 	"perceptron/perceptron"
 )
 
-func main() {
+func testPerceptron() {
 	p := perceptron.New(1e-1)
 	dataset := [][]float64{
 		{1, 1},
@@ -21,4 +21,7 @@ func main() {
 	fmt.Println(p.Activate([]float64{-1, 1}))
 	fmt.Println(p.Activate([]float64{-1, -1}))
 	fmt.Println(p.Activate([]float64{1, -1}))
+}
+
+func main() {
 }
